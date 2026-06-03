@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahfuzur Rahman Siyam</title>
+<link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@700&family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+<style>
+body{margin:0;font-family:Poppins,sans-serif;background:#08111f;color:#fff}
+.hero{padding:80px 20px;text-align:center;background:linear-gradient(rgba(3,7,18,.75),rgba(3,7,18,.85)),url('https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=1600&q=80');background-size:cover;background-position:center;background-attachment:fixed}
+h1{font-family:'Cormorant Garamond',serif;font-size:60px;margin:0}
+.subtitle{color:#9ec5ff;margin-top:10px}
+.tagline{margin-top:8px;color:#dbeafe}
+.container{max-width:1100px;margin:auto;padding:25px}
+.grid{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:20px}
+.card{background:#13233f;padding:22px;border-radius:18px;cursor:pointer}
+.card:hover{background:#1b3159}
+.page{display:none}
+.active{display:block}
+.back{background:#2563eb;color:#fff;border:none;padding:10px 16px;border-radius:10px;cursor:pointer}
+.desc{text-align:center;max-width:850px;margin:0 auto 25px;color:#dbeafe;line-height:1.8}
+.coming{text-align:center;padding:60px}
+</style>
+</head>
+<body>
+
+<div id="home" class="page active">
+<div class="hero">
+<h1>Mahfuzur Rahman Siyam</h1>
+<div class="subtitle">GHAC HSC-27</div>
+<div class="tagline">Learner • Explorer • Dreamer</div>
+<p>Welcome to my digital space. Explore my interests and future projects.</p>
+</div>
+
+<div class="container">
+<h2 style="text-align:center">Explore My Interests</h2>
+<div class="desc">
+Discover the passions that define my journey — learning, sports, nature, travel, and music. Each section reflects my interests, experiences, and future goals.
+</div>
+
+<div class="grid">
+<div class="card" onclick="showPage('education')">📚 Education</div>
+<div class="card" onclick="showPage('sports')">⚽ Sports</div>
+<div class="card" onclick="showPage('travel')">🌿 Traveling & Nature</div>
+<div class="card" onclick="showPage('music')">🎵 Music</div>
+</div>
+</div>
+</div>
+
+<div id="education" class="page container">
+<button class="back" onclick="showPage('home')">Back Home</button>
+<h2>Education</h2>
+<div class="grid">
+<div class="card" onclick="coming('Class 8')">Class 8</div>
+<div class="card" onclick="coming('SSC (9-10)')">SSC (9-10)</div>
+<div class="card" onclick="coming('HSC (11-12)')">HSC (11-12)</div>
+</div>
+</div>
+
+<div id="sports" class="page container">
+<button class="back" onclick="showPage('home')">Back Home</button>
+<h2>Sports</h2>
+<div class="grid">
+<div class="card" onclick="coming('Football')">⚽ Football</div>
+<div class="card" onclick="coming('Cricket')">🏏 Cricket</div>
+</div>
+</div>
+
+<div id="travel" class="page container">
+<button class="back" onclick="showPage('home')">Back Home</button>
+<h2>Traveling & Nature</h2>
+<div class="grid">
+<div class="card" onclick="coming('Photos')">📸 Photos</div>
+<div class="card" onclick="coming('Videos')">🎥 Videos</div>
+</div>
+</div>
+
+
+<div id="music" class="page container">
+<button class="back" onclick="showPage('home')">Back Home</button>
+<h2>Music</h2>
+<div class="grid">
+<div class="card" onclick="showPage('banglaband')">🎵 Bangla Band</div>
+<div class="card" onclick="showPage('english')">🎧 English</div>
+<div class="card" onclick="coming('Hindi')">🎼 Hindi</div>
+</div>
+</div>
+
+<div id="banglaband" class="page container">
+<button class="back" onclick="showPage('music')">Back Music</button>
+<h2>🎵 Bangla Band</h2>
+<div class="grid">
+<div class="card" onclick="showPage('song1')">🎵 1. Bus Sohokari</div>
+<div class="card" onclick="showPage('song2')">🎵 2. Ahare Ahare</div>
+</div>
+</div>
+
+<div id="song1" class="page container">
+<button class="back" onclick="showPage('banglaband')">Back</button>
+<h2>🎵 Bus Sohokari</h2>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/-r75lMK29Hg" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="song2" class="page container">
+<button class="back" onclick="showPage('banglaband')">Back</button>
+<h2>🎵 Ahare Ahare</h2>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/nJT--MlnCBk" frameborder="0" allowfullscreen></iframe>
+</div>
+
+
+<div id="english" class="page container">
+<button class="back" onclick="showPage('music')">Back Music</button>
+<h2>🎧 English</h2>
+<div class="grid">
+<div class="card" onclick="showPage('eng1')">🎧 1. Let Me Love You</div>
+<div class="card" onclick="showPage('eng2')">🎧 2. Baby</div>
+</div>
+</div>
+
+<div id="eng1" class="page container">
+<button class="back" onclick="showPage('english')">Back</button>
+<h2>🎧 Let Me Love You</h2>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/SMs0GnYze34" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="eng2" class="page container">
+<button class="back" onclick="showPage('english')">Back</button>
+<h2>🎧 Baby</h2>
+<iframe width="100%" height="315" src="https://www.youtube.com/embed/kffacxfA7G4" frameborder="0" allowfullscreen></iframe>
+</div>
+
+<div id="coming" class="page">
+<div class="coming">
+<button class="back" onclick="showPage('home')">Back Home</button>
+<h1 id="ct">Coming Soon</h1>
+<p>This section is currently under development.</p>
+</div>
+</div>
+
+<script>
+function showPage(id){
+document.querySelectorAll('.page').forEach(p=>p.classList.remove('active'));
+document.getElementById(id).classList.add('active');
+}
+function coming(name){
+document.getElementById('ct').innerText=name+' - Coming Soon';
+showPage('coming');
+}
+</script>
+</body>
+</html>
